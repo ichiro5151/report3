@@ -9,10 +9,10 @@ package jp.ac.uryukyu.ie.ichi;
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -51,4 +51,21 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
+
+// Getter methods
+public String getName() {
+    return name;
+}
+
+public int getHitPoint() {
+    return hitPoint;
+}
+
+public int getAttack() {
+    return attack;
+}
+
+public boolean isDead() {
+    return dead;
+}
 }
